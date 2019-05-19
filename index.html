@@ -10,7 +10,7 @@
   @media (min-width: 1199.98px) {
  .navbar-nav
  {
-   margin-left:600px;
+   margin-left:300px;
  }
 }
 @media (max-width: 575.98px) { 
@@ -28,7 +28,7 @@
   }
  }
  .main{
-   width:100%;
+   width:1000vw;
  }
    #more1,#more2,#more3,#more4 {display: none;}
    
@@ -51,7 +51,7 @@
  
  .main { 
    height:100vh;
-  background: url('demo.svg')  center center;
+  background: url('image.png')  center center;
   background-size: cover;
 }
 .card
@@ -77,6 +77,10 @@
  .scrolled
  {
    background-color:#17105D;
+ }
+ .left
+ {
+   margin-left:600px;
  } 
  .unscrolled
  {
@@ -118,7 +122,7 @@
   <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav mr-auto">
+    <ul class="navbar-nav mr-auto left">
     <li class="nav-item">
       <a class="nav-link" href="#">Home</a>
       </li>
@@ -134,12 +138,16 @@
     </ul>
     </div>
       </nav>
-<div class="main">
-<div class="container" style="color:white;margin-left:20px;margin-top:200px;position:absolute;">
-<div class="col-lg-7 col-xs-12" style="font-size:250%;text-transform:uppercase;text-shadow:1px 1px 10px #000;">BUILDING TECHNOLOGIES THAT BENEFITS EVERYONE</div>
-<div class="col-lg-5 col-xs-5" style="color:#928fc5;font-size:20px;">We use state of the art technologies like Artificial Intelligence , Machine learning, Bigdata analytics and NSDT to make smarter intelligent and affordable solutions.</div>
-</div>
-</div>
+<div class="container-fluid">
+  <div class="row">
+<div class="col-sm-12 col-xs-12 main">
+<div class="col-lg-5" style="color:#17105D;margin-left:750px;font-size:175%;text-transform:uppercase;position:absolute;margin-top:250px;">BUILDING TECHNOLOGIES THAT BENEFITS EVERYONE</div>
+<div class="col-lg-4" style="color:#17105D;font-size:20px;position:absolute;margin-left:840px;margin-top:380px;">We use state of the art technologies like Artificial Intelligence , Machine learning, Bigdata analytics and NSDT to make smarter intelligent and affordable solutions.</div>
+    </div>
+  </div>
+
+
+  </div>
 <div class="col-lg-12 col-sm-12 col-xs-12 products" style="text-align:center;font-size:40px;margin-top:20px;">PRODUCTS</div>
 <div class="container-fluid">
 <div class="row">
@@ -189,7 +197,7 @@
       <div>Vellore Institute Of Technology</div>
       <div>Vellore, Tamil Nadu </div>
     </div>
-    <div>Contact us:contact@findmind.in</div>
+    <div>Contact support@findmind.in</div>
     <div style="margin-top:30px;"><i class="lni-linkedin-original" style="color:white;font-size:50px;"></i></div>
 </div>
 
@@ -221,14 +229,19 @@
 <script>
 $(function() {
     var header = $(".navbar");
+    var left=$('.navbar-nav');
   
     $(window).scroll(function() {    
         var scroll = $(window).scrollTop();
         if (scroll >= 680) {
             header.removeClass("unscrolled");
             header.addClass("scrolled");
+            left.addClass("left");
+
+
         } else {
             header.removeClass("scrolled");
+            left.removeClass("left");
         }
     });
   
