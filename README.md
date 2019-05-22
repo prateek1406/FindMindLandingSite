@@ -1,4 +1,4 @@
 # FindMind
 
 Go the link
-https://brave-leavitt-00f52c.netlify.com/
+https://vigilant-hamilton-aa168d.netlify.com/
