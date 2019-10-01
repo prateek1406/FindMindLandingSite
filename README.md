@@ -1,4 +1,4 @@
 # FindMind
 
-Go the link
-https://vigilant-hamilton-aa168d.netlify.com/
+Go to this [link](https://vigilant-hamilton-aa168d.netlify.com/) to visit the website.
+
